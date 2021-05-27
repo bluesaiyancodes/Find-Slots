@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_relative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:id="@+id/im_top"
+        android:layout_above="@id/main_screen_head2"/>
+
+
+    <ImageView
+        android:id="@+id/im_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_alignParentBottom="true"/>
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/main_screen_head2"
+        android:layout_centerInParent="true"
+        android:text="@string/app_name_caps"
+        android:textColor="@color/textcolor"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/main_screen_tail1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp"
+        android:text="@string/swipe_up" />
+
+    <ImageView
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_above="@id/main_screen_tail1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="5dp"
+        android:src="@drawable/ic_swipe_up" />
+
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_notif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/white"
+        android:elevation="5dp"
+        android:text="Get Notification"
+        android:textColor="@color/black"
+        android:visibility="gone"
+        app:cornerRadius="10dp" />
+
+</RelativeLayout>

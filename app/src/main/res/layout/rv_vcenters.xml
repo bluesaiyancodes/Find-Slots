@@ -1,0 +1,531 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/vcenter_item_id"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:backgroundTint="@color/cardbackground"
+        app:cardCornerRadius="20dp"
+        app:cardElevation="4dp"
+        app:cardMaxElevation="6dp">
+
+        <RelativeLayout
+            android:id="@+id/item_rl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/search_result_linear_short"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingStart="20dp"
+                android:paddingTop="20dp"
+                android:paddingEnd="10dp"
+                android:paddingBottom="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:id="@+id/item_vcenter_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Ghatikia"
+                        android:textColor="@color/textcolor"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/item_vcenter_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="In front of Jaydev Vatika" />
+                </LinearLayout>
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/btn_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/date_background2_1"
+                    android:elevation="2dp"
+                    android:text="@string/book"
+                    android:textSize="15sp"
+                    android:textColor="@color/textcolor"
+                    app:cornerRadius="20dp" />
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/item_more_rl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/search_result_linear_short"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="20dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:id="@+id/item_divider"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/textcolorlighter"
+                    android:orientation="horizontal" />
+
+                <!-- Cost -->
+                <TextView
+                    android:id="@+id/item_cost_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/cost"
+                    android:textColor="@color/textcolor" />
+
+                <TextView
+                    android:id="@+id/item_cost"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_toEndOf="@id/item_cost_label"
+                    android:text="@string/cost"
+                    android:textColor="@color/cardtext" />
+
+
+                <!-- Dates -->
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/item_date_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_cost"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:elevation="10dp"
+                    app:cardCornerRadius="50dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/date_background2"
+                        android:orientation="horizontal"
+                        android:paddingTop="10dp"
+                        android:paddingBottom="10dp">
+
+                        <TextView
+                            android:id="@+id/item_day1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginEnd="3dp"
+                            android:background="@drawable/date_background"
+                            android:text="1"
+                            android:textColor="@color/textcolor"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/item_day2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginEnd="3dp"
+                            android:text="2"
+                            android:textColor="@color/textcolor"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/item_day3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginEnd="3dp"
+                            android:text="3"
+                            android:textColor="@color/textcolor"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/item_day4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginEnd="3dp"
+                            android:text="4"
+                            android:textColor="@color/textcolor"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/item_day5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginEnd="3dp"
+                            android:text="5"
+                            android:textColor="@color/textcolor"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/item_day6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginEnd="3dp"
+                            android:text="6"
+                            android:textColor="@color/textcolor"
+                            android:textSize="20sp" />
+
+                        <TextView
+                            android:id="@+id/item_day7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="3dp"
+                            android:layout_marginEnd="15dp"
+                            android:text="7"
+                            android:textColor="@color/textcolor"
+                            android:textSize="20sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <!-- Age Limit -->
+                <LinearLayout
+                    android:id="@+id/item_age_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_date_layout"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/item_age_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.7"
+                        android:text="@string/age_limit"
+                        android:textColor="@color/textcolor" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.3"
+                        android:weightSum="1">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5">
+
+                            <TextView
+                                android:id="@+id/item_age_18"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="0.5"
+                                android:background="@drawable/card_background"
+                                android:gravity="center"
+                                android:text="@string/eighteenp"
+                                android:textColor="@color/cardtext" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.5">
+
+                            <TextView
+                                android:id="@+id/item_age_45"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerHorizontal="true"
+                                android:layout_marginStart="30dp"
+                                android:layout_marginTop="20dp"
+                                android:layout_weight="0.55"
+                                android:background="@drawable/card_background"
+                                android:gravity="center"
+                                android:text="@string/four5p"
+                                android:textColor="@color/cardtext" />
+                        </RelativeLayout>
+
+
+                    </LinearLayout>
+
+
+                </LinearLayout>
+
+                <!-- AVL capacity -->
+                <LinearLayout
+                    android:id="@+id/item_capacity_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_age_ll"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/item_capacity_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.6"
+                        android:text="@string/avl_capacity"
+                        android:textColor="@color/textcolor" />
+
+                    <TextView
+                        android:id="@+id/item_capacity"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.4"
+                        android:text="@string/cost"
+                        android:textColor="@color/cardtext" />
+
+                </LinearLayout>
+
+                <!-- Vaccine Type -->
+                <LinearLayout
+                    android:id="@+id/item_vaccine_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_capacity_ll"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/item_vaccine_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.6"
+                        android:text="@string/vacc_type"
+                        android:textColor="@color/textcolor" />
+
+                    <TextView
+                        android:id="@+id/item_vaccine"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.4"
+                        android:text="@string/cost"
+                        android:textColor="@color/cardtext" />
+
+                </LinearLayout>
+
+                <!-- Vaccine Slots -->
+                <LinearLayout
+                    android:id="@+id/item_slots_ll"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/item_vaccine_ll"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/item_slot_label"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.6"
+                        android:text="@string/slots"
+                        android:textColor="@color/textcolor" />
+
+                    <com.google.android.material.chip.ChipGroup
+                        android:id="@+id/chip_group"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_weight="0.4"
+                        android:visibility="visible"
+                        app:checkedChip="@+id/chip1"
+                        app:singleSelection="true">
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checkable="false"
+                            android:clickable="true"
+                            android:elevation="2dp"
+                            android:focusable="true"
+                            android:text="330 - 530"
+                            android:textColor="@color/selectedcolor"
+                            android:visibility="gone"
+                            app:checkedIconVisible="true"
+                            app:chipBackgroundColor="@color/background" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checkable="false"
+                            android:clickable="true"
+                            android:elevation="2dp"
+                            android:focusable="true"
+                            android:text="330 - 530"
+                            android:textColor="@color/selectedcolor"
+                            android:visibility="gone"
+                            app:checkedIconVisible="true"
+                            app:chipBackgroundColor="@color/background" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checkable="false"
+                            android:clickable="true"
+                            android:elevation="2dp"
+                            android:focusable="true"
+                            android:text="330 - 530"
+                            android:textColor="@color/selectedcolor"
+                            android:visibility="gone"
+                            app:checkedIconVisible="true"
+                            app:chipBackgroundColor="@color/background" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checkable="false"
+                            android:clickable="true"
+                            android:elevation="2dp"
+                            android:focusable="true"
+                            android:text="330 - 530"
+                            android:textColor="@color/selectedcolor"
+                            android:visibility="gone"
+                            app:checkedIconVisible="true"
+                            app:chipBackgroundColor="@color/background" />
+
+                        <com.google.android.material.chip.Chip
+                            android:id="@+id/chip5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:checkable="false"
+                            android:clickable="true"
+                            android:elevation="2dp"
+                            android:focusable="true"
+                            android:text="330 - 530"
+                            android:textColor="@color/selectedcolor"
+                            android:visibility="gone"
+                            app:checkedIconVisible="true"
+                            app:chipBackgroundColor="@color/background" />
+
+
+                    </com.google.android.material.chip.ChipGroup>
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+            <!-- Vaccine left per dose -->
+            <LinearLayout
+                android:id="@+id/item_dose_ll"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/item_more_rl"
+                android:background="@color/dosebackground"
+                android:orientation="horizontal"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:visibility="gone"
+                android:weightSum="1">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:id="@+id/item_dose1_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/dose1"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/item_dose1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_toEndOf="@id/item_dose1_label"
+                            android:text="@string/cost"
+                            android:textColor="@color/selectedcolor"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5">
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerInParent="true">
+
+                        <TextView
+                            android:id="@+id/item_dose2_label"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginTop="20dp"
+                            android:text="@string/dose2"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/item_dose2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="18dp"
+                            android:layout_toEndOf="@id/item_dose2_label"
+                            android:text="@string/cost"
+                            android:textColor="@color/selectedcolor"
+                            android:textStyle="bold" />
+
+                    </RelativeLayout>
+                </RelativeLayout>
+
+
+            </LinearLayout>
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>

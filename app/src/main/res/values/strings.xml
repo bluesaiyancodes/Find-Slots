@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Find Slots</string>
+    <string name="app_name_caps">FIND SLOTS</string>
+    <string name="Covid19">COVID19</string>
+    <string name="vaccination">VACCINATION</string>
+    <string name="swipe_up">Swipe Up</string>
+    <string name="search">Search</string>
+    <string name="search_by_pincode">Search by PinCode</string>
+    <string name="cost">Fee</string>
+    <string name="age_limit">Min. Age Limit</string>
+    <string name="eighteenp">18+</string>
+    <string name="four5p">45+</string>
+    <string name="avl_capacity">Available Capacity</string>
+    <string name="vacc_type">Vaccine Type</string>
+    <string name="slots">Slots</string>
+    <string name="dose1">Dose 1</string>
+    <string name="dose2">Dose 2</string>
+    <string name="create_alert">Create Alert for </string>
+    <string name="book">Book</string>
+
+</resources>

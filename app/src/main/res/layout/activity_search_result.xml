@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginTop="40dp"
+    tools:context=".searchResult">
+
+    <TextView
+        android:id="@+id/rv_search_result_pin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:text="751030"
+        android:textColor="@color/textcolor"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/rv_search_result_addr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_search_result_pin"
+        android:layout_marginStart="20dp"
+        android:text="Khandagiribari"
+        android:textColor="@color/textcolorlight"
+        android:textSize="18sp" />
+
+    <RelativeLayout
+        android:id="@+id/rv_alert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rv_search_result_addr"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/rv_notif_bell"
+            android:layout_width="30dp"
+            android:layout_height="30dp" />
+
+        <RelativeLayout
+            android:id="@+id/sr_notif_rl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_toEndOf="@id/rv_notif_bell"
+            android:visibility="gone">
+
+            <ImageView
+                android:id="@+id/rv_notif_18"
+                android:layout_width="30dp"
+                android:layout_height="30dp" />
+
+            <ImageView
+                android:id="@+id/rv_notif_45"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/rv_notif_18" />
+
+            <ImageView
+                android:id="@+id/rv_notif_all"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_toEndOf="@id/rv_notif_45" />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rv_search_results"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rv_alert"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:id="@+id/sr_footer_tos"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:layout_toStartOf="@id/dot2"
+            android:text="Terms"
+            android:textColor="@color/textcolor"
+            android:textSize="12sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/dot2"
+            android:layout_centerHorizontal="true"
+            android:text="\u2022" />
+
+        <TextView
+            android:id="@+id/sr_footer_dev"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/dot2"
+            android:layout_marginStart="20dp"
+            android:text="Developers"
+            android:textColor="@color/textcolor"
+            android:textSize="12sp" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
